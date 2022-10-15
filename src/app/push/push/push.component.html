@@ -1,0 +1,15 @@
+<app-default-strategy 
+    strategy='default' 
+    [data]="data">
+</app-default-strategy>
+<app-push-strategy 
+    strategy='default' 
+    [data]="data">
+</app-push-strategy>
+<div></div>
+<button (click)="increment()">Ajouter 1 an</button>
+<button (click)="incrementAndSetData()">Ajouter 1 an et réaffecter la donnée</button>
+<button (click)="incrementAndDetectChanges()">Ajouter 1 an et détecter les changements</button>
+<button (click)="incrementAndMarkForCheck()">Ajouter 1 an et marquer à vérifier</button>
+
+

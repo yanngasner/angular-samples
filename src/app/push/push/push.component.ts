@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
-import { DATA } from '../data-provider';
+import { DATA } from '../push-data-provider';
 import { DefaultStrategyComponent } from '../default-strategy/default-strategy.component';
 import { PushStrategyComponent } from '../push-strategy/push-strategy.component';
 
@@ -33,11 +33,11 @@ export class PushComponent implements OnInit {
 
   incrementAndDetectChanges() {
     this.increment();
-    this.ref.detectChanges();
+    this.child.detectChanges();
   }
 
   incrementAndMarkForCheck() {
     this.increment();
-    this.ref.markForCheck();
+    this.child.markForCheck();
   }
 }

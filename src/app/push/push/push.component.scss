@@ -1,0 +1,20 @@
+.container {
+    font-size: 20px;
+    .title {
+        display: block;
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        
+    }
+    .childrenContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+}

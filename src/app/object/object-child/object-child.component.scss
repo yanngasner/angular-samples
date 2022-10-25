@@ -1,5 +1,9 @@
 .container {
-    border: 1px blue solid;
-    border-radius: 10%;
-    width: 200px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        margin: auto;
+    }
 }

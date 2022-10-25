@@ -1,19 +1,25 @@
-<p>{{strategy}}</p>
-<p>DONNEE INTERNE</p>
-<ul>
-    <li *ngFor="let data of innerData">{{data.name}} : {{data.age}}</li>
-</ul>
-<button (click)="increment()">Ajouter 1 an</button>
-<button (click)="incrementAndSetData()">Ajouter 1 an et réaffecter la donnée</button>
-<button (click)="incrementAndDetectChanges()">Ajouter 1 an et détecter les changements</button>
-<button (click)="incrementAndMarkForCheck()">Ajouter 1 an et marquer à vérifier</button>
-<div></div>
-<div></div>
-<p>DONNEE EXTERNE</p>
-<ul>
-    <li *ngFor="let data of data">{{data.name}} : {{data.age}}</li>
-</ul>
-<div></div>
-<div></div>
+<div class="container">
+    <div class="content">
+        <div class="inner">
+            <p class="title">{{strategy}}</p>
+            <p>Internal Data</p>
+            <ul>
+                <li *ngFor="let data of innerData">{{data.name}} : {{data.age}}</li>
+            </ul>
+        </div>
+        <div class="buttonContainer">
+            <button (click)="increment()">Add</button>
+            <button (click)="incrementAndSetData()">Add & Affect</button>
+            <button (click)="incrementAndDetectChanges()">Add & Detect</button>
+            <button (click)="incrementAndMarkForCheck()">Add & Mark</button>
+        </div>
+        <div class="inner">
+            <p>External Data</p>
+            <ul>
+                <li *ngFor="let data of data">{{data.name}} : {{data.age}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 

@@ -1,15 +1,18 @@
 <div class="container">
-    <p>value : {{value}}</p>
-    <ul>
-        <li *ngFor="let item of array">{{item}}</li>
-    </ul>
-    <ul>
-        <li *ngFor="let object of objectArray">{{object.name}} : {{object.age}}</li>
-    </ul>
-    <button (click)="changeValue()">Change la valeur</button>
-    <button (click)="addItem()">Ajouter 1 valeur</button>
-    <button (click)="changeItem()">Changer la 1ere valeur</button>
-    <button (click)="addObject()">Ajouter 1 objet</button>
-    <button (click)="changeObject()">Changer l'age du 1er objet</button>
-
+    <div class="content">
+        <p>value : {{value}}</p>
+        <ul>
+            <li *ngFor="let item of array">{{item}}</li>
+        </ul>
+        <ul>
+            <li *ngFor="let object of objectArray">{{object.name}} : {{object.age}}</li>
+        </ul>
+    </div>
+    <div class="buttons">
+        <button (click)="changeValue()"><span>Change value</span></button>
+        <button (click)="addItem()"><span>Add value</span></button>
+        <button (click)="changeItem()"><span>Change item</span></button>
+        <button (click)="addObject()"><span>Add objet</span></button>
+        <button (click)="changeObject()"><span>Change object</span></button>    
+    </div>
 </div>

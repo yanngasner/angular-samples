@@ -1,10 +1,15 @@
-<div></div>
+<div class="container">
+    <span class="title">OBJECT</span>
+    <div class="childrenContainer">
+        <app-object-child
+        [copyArray]="copyArray" [copyObject]="copyObject"
+        [value]="value" [array]="array" [objectArray]="objectArray">
+    </app-object-child>
+    <app-object-child 
+        [copyArray]="copyArray" [copyObject]="copyObject"
+        [value]="value" [array]="array" [objectArray]="objectArray">
+    </app-object-child>
+    </div>
+        
+</div>
 
-<app-object-child
-    [copyArray]="copyArray" [copyObject]="copyObject"
-    [value]="value" [array]="array" [objectArray]="objectArray">
-</app-object-child>
-<app-object-child 
-    [copyArray]="copyArray" [copyObject]="copyObject"
-    [value]="value" [array]="array" [objectArray]="objectArray">
-</app-object-child>

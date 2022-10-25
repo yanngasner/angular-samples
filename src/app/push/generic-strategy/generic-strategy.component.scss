@@ -1,0 +1,21 @@
+.container {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .inner {
+            margin: auto;
+            text-align: center;
+        }
+    }
+}

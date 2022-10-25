@@ -17,7 +17,18 @@ export class ObjectChildComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.copyArray) {
+      this.array = [...this.array];
+      this.objectArray = [...this.objectArray];
+
+      if (this.copyObject) {
+        this.objectArray = this.objectArray.map((item) => {
+          return { ...item };
+        });
+      }
+    }
+  }
 
   changeValue() {
     this.value = this.value + '!';

@@ -27,5 +27,8 @@ export class ObjectComponent implements OnInit {
     this.objectArray = OBJECT_ARRAY_DATA;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.copyArray = true;
+    this.copyObject = false;
+  }
 }

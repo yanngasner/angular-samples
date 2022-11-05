@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { ObjectComponent } from './app/object/object/object.component';
 import { PushComponent } from './app/push/push/push.component';
+import { ReferenceComponent } from './app/reference/reference/reference.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -8,7 +8,7 @@ export const APP_ROUTES: Routes = [
     component: PushComponent,
   },
   {
-    path: 'object',
-    component: ObjectComponent,
+    path: 'reference',
+    component: ReferenceComponent,
   },
 ];

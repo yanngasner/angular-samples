@@ -2,13 +2,13 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-object-child',
+  selector: 'app-reference-child',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './object-child.component.html',
-  styleUrls: ['./object-child.component.scss'],
+  templateUrl: './reference-child.component.html',
+  styleUrls: ['./reference-child.component.scss'],
 })
-export class ObjectChildComponent implements OnInit {
+export class ReferenceChildComponent implements OnInit {
   @Input() value!: string;
   @Input() array!: Array<string>;
   @Input() objectArray!: Array<any>;

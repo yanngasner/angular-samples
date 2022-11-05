@@ -1,20 +1,20 @@
 import { Component, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ObjectChildComponent } from '../object-child/object-child.component';
+import { ReferenceChildComponent } from '../reference-child/reference-child.component';
 import {
   VALUE_DATA,
   ARRAY_DATA,
   OBJECT_ARRAY_DATA,
-} from '../object-data-provider';
+} from '../reference-data-provider';
 
 @Component({
-  selector: 'app-object',
+  selector: 'app-reference',
   standalone: true,
-  imports: [CommonModule, ObjectChildComponent],
-  templateUrl: './object.component.html',
-  styleUrls: ['./object.component.scss'],
+  imports: [CommonModule, ReferenceChildComponent],
+  templateUrl: './reference.component.html',
+  styleUrls: ['./reference.component.scss'],
 })
-export class ObjectComponent implements OnInit {
+export class ReferenceComponent implements OnInit {
   value: string;
   array: Array<string>;
   objectArray: Array<any>;
@@ -28,7 +28,7 @@ export class ObjectComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.copyArray = true;
+    this.copyArray = false;
     this.copyObject = false;
   }
 }

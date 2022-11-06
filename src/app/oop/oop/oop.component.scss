@@ -1,0 +1,28 @@
+.container {
+    font-size: 20px;
+    .title {
+        display: block;
+        text-align: center;
+        margin: 20px;
+        font-size: 30px;
+        font-weight: 600;
+        
+    }
+    .groups {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+
+        .group {
+            .groupTitle {
+                display: block;
+                text-align: center;
+                margin: 10px;
+                font-weight: 600;
+            }
+            display: flex;
+            flex-direction: column;
+            height : 150px;
+        }
+    }
+}
